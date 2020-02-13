@@ -1,0 +1,71 @@
+﻿@using WebApplication2.Models;
+@model WebApplication2.Models.Login;
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="row">
+    <div class="col-md-12 col-md-offset-0 col-md-6 col-lg-offset-3">
+        <div class="panel panel-default">
+            <div class="align-middle text-center HeaderPanel">
+                Carros
+            </div>
+            <div class="panel-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.ValidationSummary();
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="email">Login</label>
+                                <input type="text" class="form-control" id="Username" name="Username" value="@Model.Username" aria-describedby="loginHelp" placeholder="Digite o login">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Senha</label>
+                                <input type="password" class="form-control" id="Password" name="Password" placeholder="Digite a senha">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group form-check">
+                                <label class="form-check-label" for="MaterLogado">Manter logado</label>
+                                <input type="checkbox" class="form-check-input" id="MaterLogado" name="MaterLogado">
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <label class="btn-link">Esqueci a senha</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-block btn-primary">Login</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-6 text-right">
+                                <label class="btn-link">Ainda não é cadastrado?</label>
+                            </div>
+                            <div class="col-md-6 text-left">
+                                <label class="btn-link">Crie uma conta</label>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <label class="btn-link">Ajuda </label>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

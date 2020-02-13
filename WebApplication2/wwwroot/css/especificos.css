@@ -1,0 +1,12 @@
+﻿/* Desenvolvido para atender o teste de Especificação de Telas LiveTouch */
+.HeaderPanel {
+    background: #3C3C3C;
+    font-size: 30px;
+    color:white;
+    height: 70px;
+}
+
+.bodylogincontorno {
+    border-radius:10px;
+}
+
